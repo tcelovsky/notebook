@@ -1,6 +1,7 @@
 import "./App.css";
 import { db } from "./firebase.js";
 import firebase from "firebase/app";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
