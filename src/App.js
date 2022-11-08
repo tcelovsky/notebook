@@ -1,5 +1,6 @@
 import "./App.css";
 import { db } from "./firebase.js";
+import firebase from "firebase/app";
 
 function App() {
   return (
