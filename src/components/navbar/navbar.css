@@ -1,0 +1,17 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 99vw;
+    height: 70px;
+    background: white;
+    box-shadow: none;
+    border-radius: 20px;
+    border: 1px solid white;
+}
+.navbar .heading {
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
