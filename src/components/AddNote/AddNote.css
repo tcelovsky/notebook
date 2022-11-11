@@ -1,0 +1,95 @@
+.addnote {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    margin: 10px auto;
+}
+.addnote h1 {
+    display: flex;
+    background: white;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-family: "poppins";
+    margin-bottom: 10px;
+}
+input {
+    border-style: none;
+    background: transparent;
+    outline: none;
+}
+textarea {
+    border-style: none;
+    background: transparent;
+    outline: none;
+}
+.addnote-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    max-width: 400px;
+    height: 10px;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 1rem;
+    background: white;
+}
+.addnote-header input {
+    flex-grow: 1;
+    color: white;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    vertical-align: middle;
+}
+.addnote-description {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 400px;
+    height: 40px;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 1rem;
+    background: white;
+}
+.addnote-header textarea {
+    flex-grow: 1;
+    color: white;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    vertical-align: middle;
+}
+.addnote .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    justify-content: center;
+}
+.addnote-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button {
+    padding: 10px 15px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: blue;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px blue;
+}
+button:hover {
+    background-color: darkblue;
+}
+button:active {
+    background-color: darkblue;
+    box-shadow: 0 5px darkblue;
+    transform: translateY(4px);
+}
