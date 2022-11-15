@@ -9,6 +9,10 @@ const AddNote = () => {
     setTitle(e.target.value);
   };
 
+  const handleTextChange = (e) => {
+    setText(e.target.value);
+  };
+
   return (
     <div className="addnote">
       <h1>add a new note</h1>
@@ -28,6 +32,7 @@ const AddNote = () => {
           className="addnote-description"
           placeholder="Note Text"
           value={text}
+          onChange={(input) => handleTextChange(input)}
         ></textarea>
       </div>
       <div className="addnote-button">
