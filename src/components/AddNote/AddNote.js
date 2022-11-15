@@ -5,6 +5,10 @@ const AddNote = () => {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
 
+  const handleTitleChange = (e) => {
+    setTitle(e.target.value);
+  };
+
   return (
     <div className="addnote">
       <h1>add a new note</h1>
@@ -14,6 +18,8 @@ const AddNote = () => {
           className="addnote-header"
           name="addnote-header"
           placeholder="Note Title"
+          value={title}
+          onChange={(input) => handleTitleChange(input)}
         ></input>
       </div>
       <div className="form-group">
