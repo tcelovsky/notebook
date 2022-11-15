@@ -47,7 +47,7 @@ const AddNote = () => {
         ></textarea>
       </div>
       <div className="addnote-button">
-        <button>onClick={() => addNote()} add note</button>
+        <button onClick={() => addNote()}>add note</button>
       </div>
     </div>
   );
