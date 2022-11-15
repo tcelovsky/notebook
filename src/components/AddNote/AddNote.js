@@ -2,6 +2,9 @@ import React from "react";
 import "./AddNote.css";
 
 const AddNote = () => {
+  const [title, setTitle] = useState("");
+  const [description, setDescription] = useState("");
+
   return (
     <div className="addnote">
       <h1>add a new note</h1>
