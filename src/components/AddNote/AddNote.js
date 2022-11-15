@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import firebase from "firebase/compat/app";
+import "firebase/compat/database";
 import "./AddNote.css";
 
 const AddNote = () => {
@@ -11,6 +13,15 @@ const AddNote = () => {
 
   const handleTextChange = (e) => {
     setText(e.target.value);
+  };
+
+  const addNote = () => {
+    if (title !== "" && text !== "") {
+      firebase.database().ref("notebook").push({
+        title: title,
+        text: text,
+      });
+    }
   };
 
   return (
@@ -36,7 +47,7 @@ const AddNote = () => {
         ></textarea>
       </div>
       <div className="addnote-button">
-        <button>add note</button>
+        <button>onClick={() => addNote()} add note</button>
       </div>
     </div>
   );
