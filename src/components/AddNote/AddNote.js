@@ -3,7 +3,7 @@ import "./AddNote.css";
 
 const AddNote = () => {
   const [title, setTitle] = useState("");
-  const [description, setDescription] = useState("");
+  const [text, setText] = useState("");
 
   const handleTitleChange = (e) => {
     setTitle(e.target.value);
@@ -27,6 +27,7 @@ const AddNote = () => {
           name="addnote-description"
           className="addnote-description"
           placeholder="Note Text"
+          value={text}
         ></textarea>
       </div>
       <div className="addnote-button">
