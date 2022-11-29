@@ -3,6 +3,7 @@ import { db } from "./firebase.js";
 import firebase from "firebase/app";
 import Navbar from "./components/Navbar/Navbar.js";
 import AddNote from "./components/AddNote/AddNote.js";
+import Notebook from "./components/Notebook/Notebook.js";
 
 function App() {
   return (
@@ -11,6 +12,9 @@ function App() {
       <Navbar />
       <div className="note-section">
         <AddNote />
+      </div>
+      <div className="notebook-section">
+        <Notebook />
       </div>
     </div>
   );
