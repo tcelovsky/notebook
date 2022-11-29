@@ -12,8 +12,6 @@ function App() {
       <Navbar />
       <div className="note-section">
         <AddNote />
-      </div>
-      <div className="notebook-section">
         <Notebook />
       </div>
     </div>
