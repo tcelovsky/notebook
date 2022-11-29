@@ -12,7 +12,7 @@ function App() {
       <Navbar />
       <div className="note-section">
         <AddNote />
-        <Notebook />
+        <Notebook notebook={"notebook props"} />
       </div>
     </div>
   );

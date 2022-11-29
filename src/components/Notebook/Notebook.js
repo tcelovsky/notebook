@@ -11,6 +11,7 @@ const Notebook = (props) => {
   return (
     <section className="notebook-container">
       <div className="notebook">
+        {props.notebook}
         {/* {props.notebook.map((note, index) => (
           <React.Fragment key={index}>
             <div className="notebook-info" key={note.id}>
