@@ -3,7 +3,7 @@ import firebase from "firebase/compat/app";
 import "firebase/compat/database";
 import "./Notebook.css";
 
-const Notebook = () => {
+const Notebook = (props) => {
   const deleteNotebook = (id) => {
     firebase.database().ref("notebook").child(id).remove();
   };
@@ -11,7 +11,7 @@ const Notebook = () => {
   return (
     <section className="notebook-container">
       <div className="notebook">
-        {props.notebook.map((note, index) => (
+        {/* {props.notebook.map((note, index) => (
           <React.Fragment key={index}>
             <div className="notebook-info" key={note.id}>
               <div className="notebook-title">
@@ -19,7 +19,7 @@ const Notebook = () => {
               </div>
             </div>
           </React.Fragment>
-        ))}
+        ))} */}
       </div>
     </section>
   );
